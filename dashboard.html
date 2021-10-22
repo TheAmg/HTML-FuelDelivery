@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FuelBooker Dashboard</title>
+    <link rel="stylesheet" href="style/style-dashboard.css">
+</head>
+
+<body onload="onLoad()">
+
+    <div class="top-navbar">
+        <ul>
+            <li onclick="book_tab_clicked()">Book fuel</li>
+            <li onclick="check_tab_clicked()">Check your orders</li>
+            <li onclick="logout_clicked()" id="logbtn">Logout</li>
+        </ul>
+
+    </div>
+    <div class="stack-div">
+
+
+        <div class="book-div" id="book-div">
+
+            <div class="book_side">
+                <div class="anim_box">
+                    <div class="pholder">
+                        <div class="petrol_bar">
+                            <h2>Petrol</h2>
+                            <p>Price Normal: <code>Rs.100/l</code><br></code>Price Premium: <code>Rs.110/l</code></p>
+                        </div>
+
+                    </div>
+                    <br>
+                    <div class="pholder">
+                        <div class="petrol_bar">
+                            <h2>Diesel</h2>
+                            <p>Price Normal: <code>Rs.90/l</code><br>Price Premium: <code>Rs.100/l</code></p>
+                        </div>
+
+                    </div>
+                    <br>
+                    <div class="pholder">
+                        <div class="petrol_bar">
+                            <h2>Payment method</h2>
+                            <p>We are only accepting cash at the moment. A sales representative will get back to you
+                                shortly once an order has been placed.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="book-form" oninput="bookform_oninput()">
+
+
+                <label for="fuel_type">Select type and grade of fuel</label><br>
+                <select name="fueltype" id="fuel_type">
+                    <optgroup label="Petrol">
+                        <option value="premium_petrol">Premium Petrol</option>
+                        <option value="normal_petrol">Normal Petrol</option>
+                    </optgroup>
+                    <optgroup label="Diesel">
+                        <option value="premium_diesel">Premium Diesel</option>
+                        <option value="normal_diesel">Normal Diesel</option>
+                    </optgroup>
+                </select>
+                <br>
+                <div class="fuel_qty_sel">
+                    <label for="fuel_amount_slider">Select amount of fuel in litres</label>
+                    <br>
+                    <span>1 </span><input type="range" class="amount_slider" id="fuel_amount_slider" value="1" min="1"
+                        max="100"><span> 100 &nbsp;</span><button id="quant_display"
+                        title="The quantity of fuel you have currently selected">1</button>
+                </div>
+                <p id="c_disp" title="Cost of fuel" value="110">Cost : Rs.110</p>
+                <label for="form-date">Pick date of delivery</label><br>
+                <input type="date" id="form-date"><br>
+
+                <label for="form-address">Enter address of delivery location</label><br>
+                <textarea id="form-address" class="form-address" placeholder="Address"></textarea>
+                <br>
+                <label for="form-phone">Enter phone number</label><br>
+                <input type="tel" title="Enter a valid mobile phone number" id="form-phone"
+                    placeholder="Enter a 10 digit mobile phone number">
+                <br>
+                <div class="tcbox">
+                </div>
+                <input type="checkbox" id="form-cbox"><span class="form-t-and-c"> Agree to our "<u
+                        title="Generic service terms">Terms and
+                        service</u>".</span>
+                <!-- <div class="spacer"></div> -->
+                <button id="book-form-submit" class="book-form-submit" onclick="place_order_clicked()">Place
+                    order</button>
+
+                <p id="status_p"></p>
+            </div>
+        </div>
+
+    </div>
+    <div class="check-div" id="check-div">
+
+        <!--<div class="check-list-div">
+            <div class="list_orders">
+                <h2>Some text</h2>
+                <p>Entry 1</p>
+                <p>Entry 2</p>
+                <p>Entry 3</p>
+                <p>Entry 4</p>
+                <p>Entry 5</p>
+                <p>Entry 6</p>
+                <p>Entry 1</p>
+                <p>Entry 2</p>
+                <p>Entry 3</p>
+                <p>Entry 4</p>
+                <p>Entry 5</p>
+                <p>Entry 6</p>
+                <p>Entry 1</p>
+                <p>Entry 2</p>
+                <p>Entry 3</p>
+                <p>Entry 4</p>
+                <p>Entry 5</p>
+                <p>Entry 6</p>
+            </div>
+        </div>
+        <div class="check-list-details">
+            <h2>Order details</h2>
+            <p>Name: </p>
+            <p>Phone number: </p>
+            <p>Address: </p>
+            <p>Fuel type and grade: </p>
+            <p>Date of delivery: </p>
+            <p>Date order was placed: </p>
+            <p>Quantity of fuel ordered : </p>
+        </div>-->
+    </div>
+    </div>
+    <div class="bottom-div">
+        <h2>?</h2>
+        <p id="p_helper"></p>
+        <p>Contact number : 4571658162</p>
+        <a href="mailto:theamgacramoghcr@gmail.com" title="Click here to write a mail to us">Write to us</a>
+    </div>
+    <script src="js/dashboard_controller.js"></script>
+</body>
+
+</html>

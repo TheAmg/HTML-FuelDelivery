@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+html::placeholder
+{
+    color: #1a759f;
+}
+body{
+    background-color: #1a759f;
+    color: #eeeeee;
+    overflow-x: hidden;
+}
+.top-navbar
+{
+    background-color: #055b83;
+    width: 100%;
+}
+.top-navbar:hover
+{
+opacity: 1;
+}
+
+.top-navbar li
+{
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+    border: none;
+}
+
+.top-navbar li:hover
+{
+    opacity: 1;
+}
+
+#logbtn
+{
+    position: absolute;
+    right:2%;
+    display: inline;
+    padding: 10px;
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+    border: none;
+    
+    
+}
+#logbtn:hover
+{
+    opacity: 1;
+}
+
+.stack-div
+{
+position: absolute;
+display: flex;
+width: 100%;
+background-color: #1a759f;
+}
+.book-div
+{
+max-width: 90%;
+width: 90%;
+overflow: hidden;
+}
+.book_side
+{
+    float: left;
+    max-width: 30%;
+    width: 30%;
+    margin-left: 10%;
+}
+.book-form
+{
+    width: 40%;
+    max-width: 40%;
+    float: left;
+    margin-left: 20%;
+    
+}
+.book-form *
+{
+    margin: 5px 0;
+}
+.book-form-input
+{
+    margin: 5px auto;
+    width: 300px;
+    max-width: 300px;
+}
+
+#quant_display
+{
+    margin-left: 30px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 100%;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    background: none;
+    color: white;
+}
+#quant_display:hover
+{
+    cursor: url("../images/fuel_cursor_small.gif"),auto;
+}
+.fuel_qty_sel *
+{
+    margin: 10px auto;
+}
+.fuel_qty_sel
+{
+    margin: 10px auto;
+}
+.book-form-input
+{
+    outline: none;
+    transition: 0.5s;
+}
+.book-form-input:focus
+{
+    border: 2px solid #1a759f;
+    transition: 0.5s;
+}
+.form-address
+{
+    resize: none;
+    overflow: auto;
+    max-width: 300px;
+    max-height: 100px;
+    width: 300px;
+    height: 100px;
+    outline:none;
+    transition: 0.5s;
+}
+.form-address:focus
+{
+    border: 2px solid #1a759f;
+}
+#form-phone
+{
+   max-width: 300px;
+   width: 300px;
+   outline: none;
+   transition: 0.5s;
+
+}
+#form-phone:focus
+{
+   border : 2px solid #1a759f;
+}
+.form-t-and-c u
+{
+    color: blue;
+    cursor: help;
+}
+.spacer
+{
+    display: block;
+    height:10px;
+}
+.book-form-submit
+{
+    margin-top: 5%px;
+    background-color: rgba(0,0,0,0.3);
+    max-width: 200px;
+    width: 200px;
+    height: 50px;
+    border: 1px solid rgba(0,0,0,0);
+    margin-left:15px;
+    
+    color: white;
+    cursor: pointer;
+    margin: 10px 35px 0;
+    transition: 0.5s;
+
+}
+.book-form-submit:hover
+{
+    transform: translateY(-5px);
+    border-color: white;
+    color: white;
+    box-shadow: 0 10px 5px 3px rgba(255,255,255,0.25);
+    background-color: rgba(0,0,0,0.5);
+}
+.check-div
+{
+display: none;
+max-width: 100%;
+width: 100%;
+
+}
+.check-list-div
+{
+float: left;
+width: 50%;
+max-width: 50%;
+}
+.check-list-details
+{
+margin: 0 auto;
+float: left;
+width: 50%;
+max-width: 50%;
+}
+.list_orders
+{
+    margin: 0 auto;
+    max-width: 50%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 5%;
+    text-align: center;
+    border: 1px solid white;
+}
+.list_orders p
+{
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.list_orders p:hover
+{
+    color:black;
+    cursor: pointer;
+    background-color: palegreen;
+}
+.check_card
+{
+    max-width: 200px;
+    width: 200px;
+    height: 250px;
+    margin: 10px;
+    background-color: #eeeeee;
+    float: left;
+    opacity: 0.6;
+    cursor: pointer;
+    border: 1px solid white;
+    transition: 0.5s;
+}
+.check_card:hover
+{
+    box-shadow: 0 5px 5px 3px rgba(255,255,255,0.3);
+    opacity: 1;
+}
+.check_card div:nth-of-type(2)
+{
+    line-height: 2.5px;
+    color: black;
+    height: 40%;
+    text-align: left;
+    box-sizing: border-box;
+    padding-left: 20%;
+}
+.check_card div:nth-of-type(2) p
+{
+    color: #1a759f;
+}
+.check_card div:nth-of-type(1)
+{
+    height: 60%;
+}
+.check_card div:nth-of-type(1) img
+{
+    max-width: 200px;
+    width: 200px;
+    height: 150px;
+    max-height: 150px;
+}
+.anim_box
+{
+    display: block;
+}
+.petrol_bar
+{
+background-color: rgba(245,245,245,0.3);
+width: 100%;
+height: 100%;
+max-height: 140px;
+max-width: 100%;
+
+cursor: point;
+border-radius: 15px;
+text-align: center;
+box-sizing: border-box;
+transition: 0.7s;
+cursor: pointer;
+font-family: "poppins",sans-serif;
+color: #1a759f;
+border: 1px soild rgba(0,0,0,0);
+}
+.petrol_bar h2
+{
+    padding-top: 5px;
+}
+.petrol_bar p
+{
+    padding: 5px;
+    font-family: sans-serif;
+}
+
+.petrol_bar:hover
+{
+ /*border: 1px solid white;*/
+ background-color: rgba(255,255,255,1);
+ box-shadow: 0 5px 5px 3px rgba(255,255,255,0.3);
+ 
+}
+
+.pholder
+{
+    margin-top: 5px;
+    max-height: 150px;
+    height: 150px;
+    display: block;
+    width: 100%;
+
+}
+.bottom-div
+{
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #dddddd;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.6rem;
+    position: fixed;
+    bottom:0;
+    right:0;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 100%;
+    transition: width 0.5s, height 0.3s, border-radius 0.7s;
+    cursor: pointer;
+}
+.bottom-div h2
+{
+    text-align: center;
+}
+.bottom-div:hover
+{
+    width: 100px;
+    height: 150px;
+    border-radius: 5%;
+
+}
+.bottom-div:hover h2
+{
+    visibility: hidden;
+
+}
+.bottom-div:hover p
+{
+    visibility: visible;
+    text-shadow: 5px 5px 3px #aaaaaa;
+
+}
+.bottom-div p
+{
+    font-size: 0.7rem;
+    visibility: hidden;
+}
+.bottom-div p:nth-of-type(1)
+{
+    font-size: 1rem;
+    color:#eeeeee;
+    text-shadow: 5px 5px 3px #aaaaaa;
+}
+.bottom-div a
+{
+    text-decoration: none;
+    color: #dddddd;
+}

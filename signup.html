@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FuelBooker Signup</title>
+    <link rel="stylesheet" href="style/style-login.css" type="text/css">
+</head>
+
+<body>
+    <div class="spacer"></div>
+    <div class="row">
+        <div class="signup-col-left">
+            <h2>What we do</h2>
+            <p>Our service is meant to largely solve the issues of managing your fuel requirement
+                efficiently, cost-effectively & most importantly, safely. We deliver diesel to users in the manner
+                prescribed by the petroleum ministry and we are licensed by PESO (Petroleum & Explosives Safety
+                Organization). Subject to government regulations we strive to revolutionize fuel delivery in India, by
+                transporting diesel at your doorstep.</p>
+        </div>
+        <div class="signup-col-right">
+            <div class="login-body">
+                <p>Create a new account</p>
+                <div class="login-form">
+                    <input class="login-form-textfield" type="email" name="user_email" id="user_email"
+                        placeholder="Email">
+                    <input class="login-form-textfield" type="text" name="user_name" id="user_name"
+                        placeholder="Username">
+
+                    <input class="login-form-textfield" type="password" name="user_password" id="user_password"
+                        placeholder="Password">
+
+                    <input class="login-form-textfield" type="password" name="user_password_confirm"
+                        id="user_password_confirm" placeholder="Confirm password">
+                    <button class="login-form-button" id="signup_button" onclick="sign_up_clicked()">Sign up</button>
+                    <div class="signin-box">
+                        <a href="index.html">Log in?</a>
+                    </div>
+                    <div class="login-from-errorhandle" id="error_box">
+                        <ul id="error_ul_parent">
+                            <li>Generic error</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-div">
+        <h2>?</h2>
+        <p>Connect with us</p>
+        <p>Contact number : 4571658162</p>
+        <p>#somenumber, some street, some area, some city</p>
+        <a href="mailto:theamgacramoghcr@gmail.com" title="Click here to write a mail to us">Write to us</a>
+    </div>
+    <script src="js/signuppage_controller.js"></script>
+</body>
+
+</html>

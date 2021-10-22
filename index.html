@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FuelBooker Login</title>
+    <link rel="stylesheet" href="style/style-login.css" type="text/css">
+</head>
+
+<body onkeydown="check_enter(event)">
+    <div class="login-box">
+        <div class="login-headline">
+            FuelBooker
+        </div>
+        <div class="login-body">
+            <p>Login to your account</p>
+            <div class="login-form">
+                <input class="login-form-textfield" type="email" name="user_email" id="user_email" placeholder="Email">
+                <input class="login-form-textfield" type="password" name="user_password" id="user_password"
+                    placeholder="Password">
+                <button class="login-form-button" onclick="login()" id="login_button">Login</button>
+                <div class="signin-box">
+                    <a href="signup.html">Sign up?</a>
+                </div>
+                <div class="login-from-errorhandle" id="error_box">
+                    <ul id="error_ul_parent">
+                        <li>Generic error</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-div">
+        <h2>?</h2>
+        <p>Connect with us</p>
+        <p>Contact number : 4571658162</p>
+        <p>#somenumber, some street, some area, some city</p>
+        <a href="mailto:theamgacramoghcr@gmail.com" title="Click here to write a mail to us">Write to us</a>
+    </div>
+    <script src="js/loginpage_controller.js"></script>
+</body>
+
+</html>
